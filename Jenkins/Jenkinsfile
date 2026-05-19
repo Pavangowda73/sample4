@@ -16,5 +16,10 @@ pipeline{
                 sh 'echo "this deploy satge"'
             }
         }
+        stage('post'){
+            steps{
+                sh 'echo "this is post stage"'
+            }
+        }
     }
 }
